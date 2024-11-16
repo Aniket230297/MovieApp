@@ -132,8 +132,11 @@
   }
 
   .posterImg > img {
+    margin-top: 0.5rem;
     height: 200px;
-    width: 100%;
+    width: 100% !important;
+    margin-left: 0rem !important;
   }
+
 }
 
