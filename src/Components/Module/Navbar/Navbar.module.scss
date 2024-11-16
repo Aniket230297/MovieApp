@@ -1,0 +1,90 @@
+.navbarContainer {
+    display: flex;
+    align-items: center;
+    font-size: 1.2rem;
+    background-color: rgb(16, 16, 20);
+    color: white;
+    padding: 1rem;
+  
+    .brandName {
+      margin-left: 5rem;
+      width: 40vw;
+    }
+  
+    .menuIcon {
+      display: none;
+      cursor: pointer;
+      font-size: 40px;
+      color: white;
+    }
+  
+    li {
+      list-style: none;
+    }
+  
+    .searchContainer {
+      margin-left: 1rem;
+      display: flex;
+  
+      .searchBtn {
+        margin-left: 1rem;
+        border: 1px solid rgb(219, 214, 214);
+        background-color: rgb(36, 37, 39);
+        padding: 0 1rem;
+      }
+  
+      .InputContainer {
+        border-radius: 0.1rem;
+        color: black;
+        padding: 0 0rem 0 1rem;
+  
+        &:focus {
+          outline: none !important;
+        }
+      }
+    }
+  }
+  
+  .menuItems {
+    display: flex;
+    gap:3rem;
+    width: 25%;
+    // margin-left: 10rem;
+  }
+  
+  // Responsive Coding
+  @media (max-width: 400px) {
+    .menuItems {
+      display: none;
+      flex-direction: column;
+      position: absolute;
+      top: 4rem;
+      left: 0;
+      background-color: rgb(52, 52, 61);
+      width: 100%;
+      padding: 1rem;
+      z-index: 100;
+      gap:0.5rem;
+    }
+    .menuItems.menuOpen {
+      display: flex;
+    }
+  
+    .navbarContainer .searchContainer {
+      display: none;
+    }
+  
+    .navbarContainer .menuIcon {
+      display: block;
+    }
+
+    .navbarContainer .brandName{
+        margin-left: 0rem;
+    }
+
+    .navbarContainer{
+        display: flex;
+        justify-content: space-around;
+    }
+  }
+  

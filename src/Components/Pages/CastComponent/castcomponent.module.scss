@@ -1,0 +1,47 @@
+
+.castcomponent{
+    background-color: rgb(62, 62, 62);
+    
+h2{
+    font-size: 1.5rem;
+    color: white;
+    margin-left: 0.5rem;
+    text-align: center;
+}
+.castMainContainer{
+    display: flex;
+    gap:0.5rem;
+    margin:0 0.5rem 0 0.5rem;
+    margin-bottom: 1rem;
+
+    p{
+        color: white;
+    }
+}
+
+}
+
+@media (max-width: 480px) {
+    .castMainContainer {
+        flex-direction: column; 
+        gap: 1rem; 
+    }
+
+    .castMainContainer div {
+        flex: 1 1 100%; 
+        padding: 0.5rem; 
+        align-items: center; 
+        justify-content: center; 
+    }
+
+    .castImgContainer > img {
+        width: 280px; 
+        margin-bottom: 0.5rem; 
+        
+    }
+
+    p {
+        font-size: 0.9rem; 
+        text-align: center; 
+    }
+}

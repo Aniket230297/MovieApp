@@ -1,0 +1,140 @@
+.singlemovieContainer {
+  background-color: rgb(62, 62, 62);
+  padding: 1rem;
+  margin: 0;
+
+
+
+  .mainContainer {
+    display: flex;
+    padding: 2rem;
+    background-color: black;
+    color: white;
+    flex-wrap: wrap; 
+    
+  }
+
+  .leftsideContainer {
+    width: 50%; 
+    padding-right: 2rem; 
+
+    .MovieContainer {
+      display: flex;
+
+      .MovieImg > img {
+        width: 18vw;
+        height: 15rem;
+      }
+
+      .description {
+        padding: 0.5rem;
+
+        .title {
+          font-size: 2rem;
+          margin-bottom: 0.5rem;
+        }
+
+        .rating {
+          font-size: 1.2rem;
+          margin-bottom: 1.5rem;
+        }
+
+        .timing {
+          background-color: black;
+          border-radius: 0.3rem;
+          padding: 0.2rem;
+        }
+
+        .genere {
+          margin-left: 0.5rem;
+        }
+
+        .releasedate {
+          margin-top: 1.5rem;
+        }
+      }
+    }
+
+    .overview {
+      font-size: 1.5rem;
+      font-weight: 500;
+    }
+  }
+
+  .posterImg > img {
+    height: 390px; 
+    width: 25vw; 
+    max-width: 100%; 
+    object-fit: cover;
+    display: block;
+    margin-left: 8rem;
+  }
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+  .mainContainer {
+    padding: 1rem; 
+  }
+
+  .leftsideContainer {
+    width: 100%; 
+    padding-right: 0;
+  }
+
+  .posterImg > img {
+    height: 250px; 
+    width: 100%; 
+    margin-left: 0; 
+  }
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 480px) {
+  .mainContainer {
+    flex-direction: column; 
+    padding: 0.5rem;
+  }
+
+  .leftsideContainer {
+    width:100% !important;
+    padding-right: 0 !important;
+  }
+
+  .MovieContainer {
+    display: flex;
+    flex-wrap: wrap; 
+
+    .MovieImg {
+      width: 50%; 
+      padding: 0.5rem; 
+
+      img {
+        width: 100% !important; 
+        height: auto;
+      }
+    }
+
+    .description {
+      width: 50%; 
+      padding: 0.5rem;
+
+      .title {
+        font-size: 1rem !important; 
+      } 
+
+      .rating {
+        font-size: 0.9rem !important; 
+      }
+      .timing{
+        font-size: 0.9 !important;
+      }
+    }
+  }
+
+  .posterImg > img {
+    height: 200px;
+    width: 100%;
+  }
+}
+

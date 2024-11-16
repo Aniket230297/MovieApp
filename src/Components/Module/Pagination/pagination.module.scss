@@ -1,0 +1,21 @@
+// pagination styling code
+.paginationContainer{
+    display:flex;
+    gap:1rem;
+    justify-content: center;
+    background-color: rgb(32, 31, 31);
+    color: white;
+    button{
+        padding:0.2rem;
+        width:9rem;
+        background-color: red;
+        border-radius: 0.5rem;
+        color: white;
+    }
+}
+
+@media (max-width: 480px) {
+    .paginationContainer > button{
+        width:5rem;
+    }
+}
