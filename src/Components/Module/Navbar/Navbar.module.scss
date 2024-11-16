@@ -53,6 +53,12 @@
   }
   
   // Responsive Coding
+  @media (max-width: 1024px){
+    .menuItems{
+      width: 80%;
+    }
+  }
+
   @media (max-width: 768px) {
     .menuItems {
       display: none;
