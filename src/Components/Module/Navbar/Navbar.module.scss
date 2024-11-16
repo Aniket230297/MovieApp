@@ -53,6 +53,41 @@
   }
   
   // Responsive Coding
+  @media (max-width: 768px) {
+    .menuItems {
+      display: none;
+      flex-direction: column;
+      position: absolute;
+      top: 4rem;
+      left: 0;
+      background-color: rgb(52, 52, 61);
+      width: 100%;
+      padding: 1rem;
+      z-index: 100;
+      gap:0.5rem;
+    }
+    .menuItems.menuOpen {
+      display: flex;
+    }
+  
+    .navbarContainer .searchContainer {
+      display: none;
+    }
+  
+    .navbarContainer .menuIcon {
+      display: block;
+    }
+
+    .navbarContainer .brandName{
+        margin-left: 0rem;
+    }
+
+    .navbarContainer{
+        display: flex;
+        justify-content: space-around;
+    }
+  }
+  
   @media (max-width: 400px) {
     .menuItems {
       display: none;
