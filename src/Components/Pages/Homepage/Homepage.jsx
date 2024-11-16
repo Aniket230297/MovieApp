@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import axios from "axios";
-import styles from "./Homepage.module.scss";
+import styles from "./homepage.module.scss";
 import { useNavigate } from "react-router-dom";
 import {Api_key , base_url} from "../../../config.js";
 import Pagination from "../../Module/Pagination/Pagination.jsx";
