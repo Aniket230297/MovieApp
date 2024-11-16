@@ -53,9 +53,12 @@
   }
   
   // Responsive Coding
-  @media (max-width: 1024px){
+  @media (max-width: 1400px){
     .menuItems{
       width: 80%;
+      border: 1px solid red;
+      justify-content: center;
+      align-items: center;
     }
   }
 
